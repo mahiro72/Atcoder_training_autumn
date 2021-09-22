@@ -30,5 +30,12 @@ ___
     これはそれぞれの配列全体にそのままか-1かけるかの2^3通りで探索できる
 
 
-
+___
+### 2021/09/21  
+- training2  
+    1. [A - Biscuits](https://atcoder.jp/contests/agc017/tasks/agc017_a)  
+    パリティに着目する問題
+    2. [C - 次のアルファベット](https://atcoder.jp/contests/code-festival-2016-quala/tasks/codefestival_2016_qualA_c)  
+    少し複雑だが実装するだけ  
+    3. [E - Colorful Blocks](https://atcoder.jp/contests/abc167/tasks/abc167_e)  
 
