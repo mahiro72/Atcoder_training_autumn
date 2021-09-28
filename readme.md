@@ -39,3 +39,28 @@ ___
     少し複雑だが実装するだけ  
     3. [E - Colorful Blocks](https://atcoder.jp/contests/abc167/tasks/abc167_e)  
 
+
+___ 
+
+training3 ~
+
+time : 1hours
+
+Exclude experimental difficulty
+
+difficulty
+1. 800~1200
+2. 1200~1600
+
+
+___
+
+### 2021/09/27  
+- training3  
+    1. [B - Palindrome-phobia](https://atcoder.jp/contests/cf17-final/tasks/cf17_final_b)  
+    現在は回文か、また入れ替えると回文になるかなどに着目してはいけない  
+    与えられたSで回文ではない文字を作れるかどうかがキーである  
+    今回はa,b,cの3文字しか使われないため、abcabc...となる必要がある。
+    2. [E - Roaming](https://atcoder.jp/contests/abc156/tasks/abc156_e)  
+    重複組み合わせ  
+    よくわからなかった。。。
