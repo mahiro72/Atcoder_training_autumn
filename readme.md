@@ -42,7 +42,7 @@ ___
 
 ___ 
 
-training3 ~
+training4 ~
 
 time : 1hours
 
@@ -56,7 +56,7 @@ difficulty
 ___
 
 ### 2021/09/30
-- training4
+- training4(1,2)
     1. [E - This Message Will Self-Destruct in 5s](https://atcoder.jp/contests/abc166/tasks/abc166_e)  
     Ai+Aj = j-i となるペアを数え上げる  
     この状態ではiとjは独立してないため計算量を落とし込めない  
@@ -69,3 +69,17 @@ ___
     つまり連結によって不便さがどれだけ減るかを考える  
     また不便さは最初は(N-1)*N//2であり、  
     サイズがa,bのグループが連結すると不便さがa*b分減る
+
+
+- training5(1)
+    1. [C - Back and Forth](https://atcoder.jp/contests/abc051/tasks/abc051_c)  
+    bfsで通った道を保持しながら探索するものだと思った  
+    だがこの時問題となったのがrouteの保持方法である  
+    これが思いつかず時間切れ  
+    解法を見るとこの問題では難しいアルゴリズムを考える必要がなく、  
+    1回目と2回目で1周り分ずらすと答えとなる  
+    常にsx,syが左下でtx,tyが右上にあるという点を意識してたら  
+    この問題の本質に気づけた
+    2. [D - Even Relation](https://atcoder.jp/contests/abc126/tasks/abc126_d)  
+    dfsで長さを保持しながら探索  
+    水difの難易度ではない
