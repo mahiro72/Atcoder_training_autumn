@@ -55,12 +55,17 @@ difficulty
 
 ___
 
-### 2021/09/27  
-- training3  
-    1. [B - Palindrome-phobia](https://atcoder.jp/contests/cf17-final/tasks/cf17_final_b)  
-    現在は回文か、また入れ替えると回文になるかなどに着目してはいけない  
-    与えられたSで回文ではない文字を作れるかどうかがキーである  
-    今回はa,b,cの3文字しか使われないため、abcabc...となる必要がある。
-    2. [E - Roaming](https://atcoder.jp/contests/abc156/tasks/abc156_e)  
-    重複組み合わせ  
-    よくわからなかった。。。
+### 2021/09/30
+- training4
+    1. [E - This Message Will Self-Destruct in 5s](https://atcoder.jp/contests/abc166/tasks/abc166_e)  
+    Ai+Aj = j-i となるペアを数え上げる  
+    この状態ではiとjは独立してないため計算量を落とし込めない  
+    そこで Ai+i = j-Aj と式変形することでそれぞれが独立した式にできる  
+    後はそれぞれ(2つ)の配列を用意し同じ値となるものがいくつあるか数える
+    2. [D - Decayed Bridges ](https://atcoder.jp/contests/abc120/tasks/abc120_d)  
+    **連結成分を分けることは難しい**  
+    これを実装しようとしてうまくいかず時間切れ...  
+    今回**連結を分離させていく操作は、時間を逆に見て連結させていく操作で考える**というテクを使う  
+    つまり連結によって不便さがどれだけ減るかを考える  
+    また不便さは最初は(N-1)*N//2であり、  
+    サイズがa,bのグループが連結すると不便さがa*b分減る
