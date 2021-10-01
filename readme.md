@@ -83,3 +83,15 @@ ___
     2. [D - Even Relation](https://atcoder.jp/contests/abc126/tasks/abc126_d)  
     dfsで長さを保持しながら探索  
     水difの難易度ではない
+
+
+___
+### 2021/10/01
+- training6(2)
+    1. [D - Enough Array](https://atcoder.jp/contests/abc130/tasks/abc130_d)  
+    しゃくとり法  
+    右端を全探索して左端を右端に近づけていく  
+    解説では左端を全探索して右端をK未満である限り伸ばしていた。  
+    こちらのほうがイメージしやすい
+    2. [E - All-you-can-eat](https://atcoder.jp/contests/abc145/tasks/abc145_e)  
+
