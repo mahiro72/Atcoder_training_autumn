@@ -1,18 +1,16 @@
 N,T = map(int,input().split())
-A,B=[],[]
+ab = [list(map(int,input().split()))for _ in range(N)]
+ab.sort(key=lambda x:x[0])
 
-for i in range(N):
-    a,b = map(int,input().split())
-    A.append(a)
-    B.append(b)
+dp = [[0]*(T+1)for _ in range(N+1)]
+ans = 0
 
-n = []
-dp = [[0]*(T+max(A)+1) for _ in range(N+1)]
+for i,(a,b) in zip(range(1,N+1),ab):
+    for j in range(T):
+        dp[i][j] = dp[i-1][j]
+        ans = max(ans,dp[i][j]+b)
+        if j>=a:
+            dp[i][j] = max(dp[i][j],dp[i-1][j-a]+b)
 
-for i,(a,b) in enumerate(zip(A,B)):
-    for t in range(T+max(A)+1):
-        dp[i+1][t] = dp[i][t]
-        if a<=t<T+a:
-            dp[i+1][t] = max(dp[i][t],dp[i][t-a]+b)
-
-print(max(dp[N][T:]))
+# print(dp[N])
+print(ans)
