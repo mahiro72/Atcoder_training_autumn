@@ -100,4 +100,9 @@ ___
     この問題のキーポイントである  
     そこでT分未満で作れる料理の最大値を求め最後に満足度を足して  
     ansを更新していく
-    
+
+
+- training7(1,2)
+    1. [C - Factors of Factorial](https://atcoder.jp/contests/arc067/tasks/arc067_a)  
+
+    2. [E - Third Avenue](https://atcoder.jp/contests/abc184/tasks/abc184_e)  
