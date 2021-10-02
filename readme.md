@@ -104,5 +104,11 @@ ___
 
 - training7(1,2)
     1. [C - Factors of Factorial](https://atcoder.jp/contests/arc067/tasks/arc067_a)  
-
+    1からNについて素因数分解して  
+    その素因数の数に１足したものをmodで割りながらかけていく
     2. [E - Third Avenue](https://atcoder.jp/contests/abc184/tasks/abc184_e)  
+    幅優先探索  
+    テレポート先をあらかじめ記録しておき、初めてそのテレポーターへ来たとき  
+    ほかのテレポーターへワープして探索する  
+    そうでない場合通常の探索をする  
+    あと、pypy3では通ったがpythonではTLEなので注意

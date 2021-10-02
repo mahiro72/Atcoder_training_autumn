@@ -1,4 +1,3 @@
-
 N = int(input())
 
 def f(x):
@@ -7,27 +6,24 @@ def f(x):
         x//=2
         r.append(2)
     tmp = 3
-    while tmp*tmp<=x:
+    while x!=1:
         if x%tmp==0:
-            r.append(x)
+            r.append(tmp)
             x//=tmp
-        else:
-            tmp+=2
-    if x!=1:
-        r.append(x)
+            continue
+        tmp+=2
     return r
 
 cnt = {x:0 for x in range(1,N+1)}
 
 for i in range(1,N+1):
     for j in f(i):
-        print(j)
         cnt[j]+=1
 
 ans=1
 mod = 10**9+7
+
 for i in cnt.values():
     ans*=(i+1)%mod
 
 print(ans%mod)
-print(cnt)
