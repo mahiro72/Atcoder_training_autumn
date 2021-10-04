@@ -127,3 +127,20 @@ ___
     すでに入れ替えが行われていた場合はexit
     2. []()  
     見る時間がなかったので略
+
+
+___
+### 2021/10/04
+- training8
+    1. [B - Template Matching](https://atcoder.jp/contests/abc054/tasks/abc054_b)  
+    実装問題、全探索  
+    計算量はO(N^2*M^2)なので十分間に合う  
+    初期の問題ということもありかなり優しめ、今だと灰difくらいかな
+    2. [B - Squares ](https://atcoder.jp/contests/arc125/tasks/arc125_b)  
+    少し納得いかない部分もある...  
+    x^2-y = k^2  
+    x^2-k^2 = y  
+    (x+k)(x-k) = y  
+    x+k=q,x-k=pとおくとp>√Nであるのでpを全探索することができる  
+    したがってq<=p<=N//q and p≡q(mod 2)となる個数を数える  
+    
